@@ -50,24 +50,6 @@ Our journey wasn't without its challenges. Here are some of the key obstacles we
 
 5. **Testbench Creation**: Developing comprehensive testbenches to verify our Verilog implementations was more complex than anticipated.
 
-## Future Tasks: Convolutions
-
-Our next big challenge is implementing convolutions. Here's our approach:
-
-- We'll work with a 64x64 2D Array and a 3x3 Kernel
-- Convert the 2D array into a 1D array (4096 elements), called signal-A
-- Apply the same to the 3x3 kernel, resulting in a 9-element 1D array
-- Perform convolution on these two 1D arrays
-
-![Convolution Framework](https://github.com/user-attachments/assets/bbbbb0ae-95ab-4f56-a4de-d44316ab3c69)
-
-Our Verilog framework will include:
-- Multiplexers to flip signals
-- Binary multiplier for value multiplication
-- Demux for storing values in registers
-- Iterative process with value forwarding
-- Full adders (8 single-bit adders) for final addition
-
 ## Kernels: The Heart of Convolution
 
 Kernels, also known as "masks", determine the type of convolution applied to an image. Let's explore some standard kernels:
@@ -88,6 +70,25 @@ Kernels, also known as "masks", determine the type of convolution applied to an 
 #### Sobel Sharpening Operator
 ![Sobel Sharpening Operator](https://github.com/user-attachments/assets/4c985fe2-0862-42fc-8372-bcd353ad016c)
 ![Sobel Sharpening Effect](https://github.com/user-attachments/assets/150c136c-c485-4ecd-ae91-9e086bb4d660)
+
+## Future Tasks: Convolutions
+
+Our next big challenge is implementing convolutions. Here's our approach:
+
+- We'll work with a 64x64 2D Array and a 3x3 Kernel
+- Convert the 2D array into a 1D array (4096 elements), called signal-A
+- Apply the same to the 3x3 kernel, resulting in a 9-element 1D array
+- Perform convolution on these two 1D arrays
+
+![Convolution Framework](https://github.com/user-attachments/assets/bbbbb0ae-95ab-4f56-a4de-d44316ab3c69)
+
+Our Verilog framework will include:
+- Multiplexers to flip signals
+- Binary multiplier for value multiplication
+- Demux for storing values in registers
+- Iterative process with value forwarding
+- Full adders (8 single-bit adders) for final addition
+
 
 ## Steps to run yosys synthesis
 
