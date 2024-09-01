@@ -1,5 +1,4 @@
 
-# Convolution on FPGA: Our Journey So Far
 
 ## Introduction
 
