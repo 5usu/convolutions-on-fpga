@@ -89,4 +89,11 @@ Kernels, also known as "masks", determine the type of convolution applied to an 
 ![Sobel Sharpening Operator](https://github.com/user-attachments/assets/4c985fe2-0862-42fc-8372-bcd353ad016c)
 ![Sobel Sharpening Effect](https://github.com/user-attachments/assets/150c136c-c485-4ecd-ae91-9e086bb4d660)
 
+## Steps to run yosys synthesis
 
+- install yosys
+
+sudo apt install yosys
+sudo apt upadte 
+
+then run the synthesis.v file for the synthesis.
