@@ -1,7 +1,7 @@
 ## Description of files
 
--assets (contains the images of the LUT used and input images) 
--netlist (contains the netlist of the final synthesis code) 
+- assets (contains the images of the LUT used and input images) 
+- netlist (contains the netlist of the final synthesis code) 
 - python (contains python scripts to convert the pixel data to hex data) 
 - rtl (contains trial basic blocks used in the final synthesis code) 
 
