@@ -1,0 +1,21 @@
+# Read the Verilog files
+read_verilog sample1.v
+
+# Set the top module
+hierarchy -top gaussian_blur_256x256
+
+# Perform synthesis
+synth_xilinx -family xc7 -top gaussian_blur_256x256
+
+# Generate netlist
+write_verilog netlist.v
+
+# Generate JSON netlist for further analysis
+write_json netlist.json
+
+# Print statistics
+stat
+
+# Show the number of LUTs used
+show -format png -prefix gaussian_blur_schematic
+
